@@ -7,6 +7,7 @@
 <title>메인페이지입니다</title>
 </head>
 <body>
+<%@ include file="header.jsp" %>
 
 </body>
 </html>
