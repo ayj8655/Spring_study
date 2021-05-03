@@ -47,11 +47,6 @@ local.properties
 # STS (Spring Tool Suite)
 .springBeans
 
-
-#
-# db
-root-context.xml
-
 # Eclipse Core       
 .project 
 

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 
-<h1>~헤더 파일 입니다~</h1>
+<h1>Echo</h1>
 <br>
 <hr>
 
