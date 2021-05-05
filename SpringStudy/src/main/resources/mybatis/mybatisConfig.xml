@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>	<!-- 해당 경로 아래를 알리아스로 칭한다. -->
+		<typeAlias type="com.ssafy.study.dto.MemDTO" alias="MemDTO" />
+		<typeAlias type="com.ssafy.study.dto.ProductDTO" alias="ProductDTO" />
+	</typeAliases>
+
+	<mappers>		<!-- sql이 들어가있는 맵퍼 파일읠 위치 -->
+		<mapper resource="mybatis/memberSQLMapper.xml" />
+		<mapper resource="mybatis/productSQLMapper.xml" />
+	</mappers>
+</configuration>

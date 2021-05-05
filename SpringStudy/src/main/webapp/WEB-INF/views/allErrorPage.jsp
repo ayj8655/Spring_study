@@ -11,8 +11,9 @@
 <body>
 	<div align="center">
 		<h1>Error!</h1>
-		<h2>왜 그랬니</h2>
-		${message } <a href="<c:url value='/'/>">초기화면</a>
+		${message } 
+		
+		<a href="<c:url value='/'/>">초기화면</a>
 	</div>
 </body>
 </html>

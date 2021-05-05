@@ -5,19 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script type="text/javascript">
-/*
-	$(document).ready(function(){
-		if(${currentId == null}){
-			alert("로그인 해주세요");
-			$(location).attr('href', "<c:url value='/mem/loginpage' />");
-		}
-	})
-*/
-</script>
+
 </head>
 <body>
 		<table>

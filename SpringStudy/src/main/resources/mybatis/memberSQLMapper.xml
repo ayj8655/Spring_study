@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  
+<mapper namespace="ssafy.member">
+
+	<select id="login" parameterType="map" resultType="MemDTO">
+		select num, pw, name, tel
+		from members
+		where num=#{num}
+		and pw=#{pw}
+	</select>
+
+	<insert id="insert" parameterType="MemDTO">
+		insert into members (num, pw, name, tel)
+		values(
+			#{num},
+			#{pw},
+			#{name},
+			#{tel}
+		)
+	</insert>
+
+	<update id="update" parameterType="MemDTO">
+		update members set 
+			pw=#{pw},
+			name=#{name}, 
+			tel=#{tel} 
+		where
+			num=#{num}
+	</update>
+
+	<delete id="delete" parameterType="MemDTO">
+		delete from members 
+		where
+		num=#{num}
+	</delete>
+
+	<select id="selectList" resultType="MemDTO">
+		select num, pw, name, tel
+		from members
+	</select>
+
+	<select id="selectOne" parameterType="string"
+		resultType="MemDTO">
+		select num, pw, name, tel 
+		from members 
+		where 
+			num = #{num}
+	</select>
+
+</mapper>
