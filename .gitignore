@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/java,eclipse,java-web
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,eclipse,java-web
 
+*.properties
+
+
 ### Eclipse ###
 .metadata
 bin/
