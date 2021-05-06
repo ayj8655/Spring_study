@@ -33,30 +33,35 @@ public class MemberMybatisRepositoryImpl implements MemberRepository {
 
 	@Override
 	public int insert(MemDTO m) {
+		
 		return session.insert("ssafy.member.insert", m);
 		
 	}
 
 	@Override
 	public int update(MemDTO m) {
+		
 		return session.update("ssafy.member.update", m);
 		
 	}
 
 	@Override
 	public int delete(String num) {
+		
 		return session.delete("ssafy.member.delete", num);
 		
 	}
 
 	@Override
 	public MemDTO selectOne(String num) {
+		
 		MemDTO dto = session.selectOne("ssafy.member.selectOne", num);
 		return dto;
 	}
 
 	@Override
 	public List<MemDTO> selectList() {
+		
 		List<MemDTO> list = session.selectList("ssafy.member.selectList");
 		return list;
 	}
