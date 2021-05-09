@@ -19,7 +19,7 @@
 	<a href="<c:url value='/mem/loginpage'/>">로그인</a>
 	<a href="<c:url value='/mem/memlist'/>">회원리스트</a>
 	<a href="<c:url value='/pro/prolist'/>">상품리스트</a>
-	<a href="<c:url value='/uploadform'/>">파일업로드</a>
+	<a href="<c:url value='/filelist'/>">파일업로드/다운로드</a>
 	</div>
 </body>
 </html>
